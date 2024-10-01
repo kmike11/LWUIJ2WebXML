@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!DOCTYPE NLFUA8_orarend [
-    <!ELEMENT NLFUA8_orarend (ora*)>
+<!DOCTYPE LWUIJ2_orarend [
+    <!ELEMENT LWUIJ2_orarend (ora*)>
     <!ELEMENT ora (targy+, idopont+, helyszin+, oktato+, szak+)>
     <!ELEMENT targy (#PCDATA)>
     <!ELEMENT idopont (nap+, tol+, ig+)>
@@ -16,7 +16,7 @@
     <!ATTLIST ora tipus (gyakorlat | elmelet) #REQUIRED>
 ]>
 
-<NLFUA8_orarend>
+<LWUIJ2_orarend>
     <ora id="O0" tipus="elmelet">
         <targy>Elektrotechnika és elektronika</targy>
         <idopont>
@@ -160,4 +160,4 @@
         <oktato>Kunné Dr. Tamás Judit</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-</NLFUA8_orarend>
+</LWUIJ2_orarend>
