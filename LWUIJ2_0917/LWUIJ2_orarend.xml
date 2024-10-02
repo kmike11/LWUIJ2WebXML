@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!DOCTYPE LWUIJ2_orarend [
-    <!ELEMENT LWUIJ2_orarend (ora*)>
-    <!ELEMENT ora (targy+, idopont+, helyszin+, oktato+, szak+)>
-    <!ELEMENT targy (#PCDATA)>
-    <!ELEMENT idopont (nap+, tol+, ig+)>
-    <!ELEMENT nap (#PCDATA)>
-    <!ELEMENT tol (#PCDATA)>
-    <!ELEMENT ig (#PCDATA)>
-    <!ELEMENT helyszin (#PCDATA)>
-    <!ELEMENT oktato (#PCDATA)>
-    <!ELEMENT szak (#PCDATA)>
-
-    <!ATTLIST ora id ID #REQUIRED>
-    <!ATTLIST ora tipus (gyakorlat | elmelet) #REQUIRED>
-]>
-
-<LWUIJ2_orarend>
-    <ora id="O0" tipus="elmelet">
+<KM_orarend_orarend>
+    <ora id="0" tipus="elmelet">
         <targy>Elektrotechnika és elektronika</targy>
         <idopont>
             <nap>Hétfő</nap>
@@ -28,7 +11,7 @@
         <oktato>Szabó Nórbert</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O1" tipus="elmelet">
+    <ora id="1" tipus="elmelet">
         <targy>Webtechnológia I</targy>
         <idopont>
             <nap>Hétfő</nap>
@@ -39,7 +22,7 @@
         <oktato>Agárdi Anita</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O3" tipus="gyakorlat">
+    <ora id="3" tipus="gyakorlat">
         <targy>Angol szaknyelv</targy>
         <idopont>
             <nap>Hétfő</nap>
@@ -50,7 +33,7 @@
         <oktato>Dorkó Dóra</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O4" tipus="gyakorlat">
+    <ora id="4" tipus="gyakorlat">
         <targy>Webtechnológia I</targy>
         <idopont>
             <nap>Hétfő</nap>
@@ -61,7 +44,7 @@
         <oktato>Agárdi Anita</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O5" tipus="elmelet">
+    <ora id="5" tipus="elmelet">
         <targy>Mobilprogramozás alapjai</targy>
         <idopont>
             <nap>Hétfő</nap>
@@ -72,7 +55,7 @@
         <oktato>Agárdi Anita</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O6" tipus="gyakorlat">
+    <ora id="6" tipus="gyakorlat">
         <targy>Mobilprogramozás alapjai</targy>
         <idopont>
             <nap>Hétfő</nap>
@@ -83,7 +66,7 @@
         <oktato>Agárdi Anita</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O7" tipus="elmelet">
+    <ora id="7" tipus="elmelet">
         <targy>Windows rendszergazda</targy>
         <idopont>
             <nap>Kedd</nap>
@@ -94,7 +77,7 @@
         <oktato>Wagner György</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O8" tipus="gyakorlat">
+    <ora id="8" tipus="gyakorlat">
         <targy>Webes adatkezelő környezetek</targy>
         <idopont>
             <nap>Kedd</nap>
@@ -105,7 +88,7 @@
         <oktato>Dr Bednarik László</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-     <ora id="O9" tipus="gyakorlat">
+     <ora id="9" tipus="gyakorlat">
         <targy>Elektrotechnika és elektronika</targy>
         <idopont>
             <nap>Szerda</nap>
@@ -116,7 +99,7 @@
         <oktato>Szabó Norbert</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O10" tipus="gyakorlat">
+    <ora id="10" tipus="gyakorlat">
         <targy>Mesterséges intelinegcia</targy>
         <idopont>
             <nap>Szerda</nap>
@@ -127,7 +110,7 @@
         <oktato>Fazekas Levente</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O11" tipus="gyakorlat">
+    <ora id="11" tipus="gyakorlat">
         <targy>Windows rendszergazda</targy>
         <idopont>
             <nap>Szerda</nap>
@@ -138,7 +121,7 @@
         <oktato>Wagner György</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-    <ora id="O12" tipus="elmelet">
+    <ora id="12" tipus="elmelet">
         <targy>Webes adatkezelő környezetek</targy>
         <idopont>
             <nap>Szerda</nap>
@@ -149,7 +132,7 @@
         <oktato>Dr Kovács László</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-     <ora id="O13" tipus="elmelet">
+     <ora id="13" tipus="elmelet">
         <targy>Mesterséges intelinegcia</targy>
         <idopont>
             <nap>Szerda</nap>
@@ -160,4 +143,4 @@
         <oktato>Kunné Dr. Tamás Judit</oktato>
         <szak>Mérnökinformatika BSc</szak>
     </ora>
-</LWUIJ2_orarend>
+</KM_orarend>
