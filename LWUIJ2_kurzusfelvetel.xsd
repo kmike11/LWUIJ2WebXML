@@ -1,0 +1,23 @@
+
+
+
+<etterem ekod="el">
+    <nev>Trófea</nev>
+    <cím>
+        <varos>Budapest</varos>
+        <utca>Visegrádi</utca>
+        <hazszam>13</hazszam>
+    </cím>
+    <csillag>4</csillag>
+</etterem>
+
+<etterem ekod="el">
+    <nev>Gundel</nev>
+    <cím>
+        <varos>Budapest</varos>
+        <utca>Gundel Károly</utca>
+        <hazszam>4</hazszam>
+    </cím>
+    <csillag>4</csillag>
+</etterem>
+
