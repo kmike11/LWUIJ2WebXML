@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="hallgatoLWUIJ2.xsl"?>
 <class>
     <student id="01">
         <vezeteknev>Vicc</vezeteknev>
@@ -10,7 +9,7 @@
     </student>
     <student id="02">
         <vezeteknev>Lopez</vezeteknev>
-        <keresztnev>De Futasztán</keresztnev>
+        <keresztnev>De Futaztán</keresztnev>
         <becenev>Jumbó</becenev>
         <kor>33</kor>
         <osztondij>585</osztondij>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylsheet type="text/xsl" href="autok.xsl"?>
+<autok>
+    <auto rsz="HJA-741">
+        <tipus> Opel </tipus>
+        <ar> 65441 </ar>
+        <szin> piros </szin>
+        <tulaj>
+            <nev>Leonidasz</nev>
+            <varos>Miskolc</varos>
+        </tulaj>
+    </auto>
+    <auto rsz="HET-593">
+        <tipus> Mercedes </tipus>
+        <ar> 99999 </ar>
+        <szin> fehér </szin>
+        <tulaj>
+            <nev>Mercédesz</nev>
+            <varos>Miskolc</varos>
+        </tulaj>
+    </auto>
+    <auto rsz="OTH-363">
+        <tipus> Opel </tipus>
+        <ar> 85854 </ar>
+        <szin> Fekete </szin>
+        <tulaj>
+            <nev>Ronáldó</nev>
+            <varos>Lyukóbánya</varos>
+        </tulaj>
+    </auto>
+    <auto rsz="ROO-666">
+        <tipus> Opel </tipus>
+        <ar> 453354 </ar>
+        <szin> feher </szin>
+        <tulaj>
+            <nev>Józsi</nev>
+            <varos>Debrecen</varos>
+        </tulaj>
+    </auto>
+</autok>
