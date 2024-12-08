@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaLWUIJ2.xsd">
+    <Versenyzok>
+        <Versenyzo Dazon="1" Szektorazon="1" VAzon="1">
+            <VNev>Bence</VNev>
+            <Sz_adatok>
+                <Szul_ido>1997.01.06</Szul_ido>
+                <Szul_hely>Gyula</Szul_hely>
+            </Sz_adatok>
+        </Versenyzo>
+        <Versenyzo Dazon="2" Szektorazon="2" VAzon="2">
+            <VNev>Akos</VNev>
+            <Sz_adatok>
+                <Szul_ido>2000.10.15</Szul_ido>
+                <Szul_hely>Los Angeles</Szul_hely>
+            </Sz_adatok>
+        </Versenyzo>
+        <Versenyzo Dazon="3" Szektorazon="3" VAzon="3">
+            <VNev>Alex</VNev>
+            <Sz_adatok>
+                <Szul_ido>1999.03.20</Szul_ido>
+                <Szul_hely>Budapest</Szul_hely>
+            </Sz_adatok>
+        </Versenyzo>
+    </Versenyzok>
+    <Doksik>
+        <Doksi Vazon="1">
+            <Igazolvany>Taj_Kartya</Igazolvany>
+        </Doksi>
+        <Doksi Vazon="2">
+            <Igazolvany>Vezetoi_Engedely</Igazolvany>
+        </Doksi>
+        <Doksi Vazon="3">
+            <Igazolvany>Szig_szam</Igazolvany>
+        </Doksi>
+        <Doksi Vazon="4">
+            <Igazolvany>Lakcim_kartya</Igazolvany>
+        </Doksi>
+    </Doksik>
+    <Verseny_Birok>
+        <Verseny_Biro BAzon="1">
+            <VNev>Kiss</VNev>
+            <KNev>Joe</KNev>
+            <Sz_adatok>
+                <Szul_ido>1980.06.20</Szul_ido>
+                <Szul_hely>Budapest</Szul_hely>
+            </Sz_adatok>
+        </Verseny_Biro>
+        <Verseny_Biro BAzon="2">
+            <VNev>Nagy</VNev>
+            <KNev>Ferenc</KNev>
+            <Sz_adatok>
+                <Szul_ido>1985.12.03</Szul_ido>
+                <Szul_hely>Sopron</Szul_hely>
+            </Sz_adatok>
+        </Verseny_Biro>
+        <Verseny_Biro BAzon="3">
+            <VNev>Kovacs</VNev>
+            <KNev>Janos</KNev>
+            <Sz_adatok>
+                <Szul_ido>1975.02.10</Szul_ido>
+                <Szul_hely>Gyor</Szul_hely>
+            </Sz_adatok>
+        </Verseny_Biro>
+    </Verseny_Birok>
+    <Kifogott_Halak>
+        <Kifogott_hal Halindex="1" Hazon="1" VerAzon="1">
+            <THal>Csuka</THal>
+            <Kg>5</Kg>
+            <ido>14:00</ido>
+        </Kifogott_hal>
+        <Kifogott_hal Halindex="2" Hazon="2" VerAzon="2">
+            <THal>Ponty</THal>
+            <Kg>10</Kg>
+            <ido>15:00</ido>
+        </Kifogott_hal>
+        <Kifogott_hal Halindex="3" Hazon="3" VerAzon="3">
+            <THal>Amur</THal>
+            <Kg>8</Kg>
+            <ido>17:00</ido>
+        </Kifogott_hal>
+    </Kifogott_Halak>
+    <Ellenorzesek>
+        <Ellenorzes VBiroId="1" VersenyzoId="2">
+            <Mikor>17:55</Mikor>
+        </Ellenorzes>
+        <Ellenorzes VBiroId="1" VersenyzoId="1">
+            <Mikor>17:50</Mikor>
+        </Ellenorzes>
+        <Ellenorzes VBiroId="3" VersenyzoId="3">
+            <Mikor>17:45</Mikor>
+        </Ellenorzes>
+        <Ellenorzes VBiroId="3" VersenyzoId="2">
+            <Mikor>17:40</Mikor>
+        </Ellenorzes>
+        <Ellenorzes VBiroId="2" VersenyzoId="1">
+            <Mikor>17:35</Mikor>
+        </Ellenorzes>
+    </Ellenorzesek>
+    <Dijak>
+        <Dij Dazon="1">
+            <DNev>Legtobb_Hal</DNev>
+            <Erteke>5000</Erteke>
+            <At_adasi_idopont>18:00</At_adasi_idopont>
+        </Dij>
+        <Dij Dazon="2">
+            <DNev>Legnagyobb_Hal</DNev>
+            <Erteke>5000</Erteke>
+            <At_adasi_idopont>18:30</At_adasi_idopont>
+        </Dij>
+        <Dij Dazon="3">
+            <DNev>Gyoztes</DNev>
+            <Erteke>20000</Erteke>
+            <At_adasi_idopont>19:00</At_adasi_idopont>
+        </Dij>
+    </Dijak>
+    <Helyszinek>
+        <Helyszin SzektorAzon="1">
+            <Helyszin_tipusa>Alacsony_part</Helyszin_tipusa>
+            <Meret>2033</Meret>
+            <Szektor>A</Szektor>
+        </Helyszin>
+        <Helyszin SzektorAzon="2">
+            <Helyszin_tipusa>Magas_part</Helyszin_tipusa>
+            <Meret>25</Meret>
+            <Szektor>B</Szektor>
+        </Helyszin>
+        <Helyszin SzektorAzon="3">
+            <Helyszin_tipusa>Alacsony_part</Helyszin_tipusa>
+            <Meret>30</Meret>
+            <Szektor>C</Szektor>
+        </Helyszin>
+    </Helyszinek>
+    <Hal_Tipusok>
+        <Hal_Tipus index="1">
+            <Ragadozo>igen</Ragadozo>
+            <Tipusa>VedettHal</Tipusa>
+            <Oshonos>nem</Oshonos>
+        </Hal_Tipus>
+        <Hal_Tipus index="2">
+            <Ragadozo>nem</Ragadozo>
+            <Tipusa>VedettHal</Tipusa>
+            <Oshonos>igen</Oshonos>
+        </Hal_Tipus>
+        <Hal_Tipus index="3">
+            <Ragadozo>igen</Ragadozo>
+            <Tipusa>NemVedettHal</Tipusa>
+            <Oshonos>igen</Oshonos>
+        </Hal_Tipus>
+    </Hal_Tipusok>
+</root>

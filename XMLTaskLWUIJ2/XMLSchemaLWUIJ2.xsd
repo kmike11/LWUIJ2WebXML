@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Versenyzok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Versenyzo" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="VNev" type="xs:string" />
+                                        <xs:element name="Sz_adatok">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Szul_ido" type="szulido" />
+                                                    <xs:element name="Szul_hely" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="VAzon" type="xs:string" />
+                                    <xs:attribute name="Szektorazon" type="xs:string" />
+                                    <xs:attribute name="Dazon" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Doksik">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Doksi" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Igazolvany" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="Vazon" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Verseny_Birok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Verseny_Biro" minOccurs="1" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="VNev" type="xs:string" />
+                                        <xs:element name="KNev" type="xs:string" />
+                                        <xs:element name="Sz_adatok">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Szul_ido" type="szulido" />
+                                                    <xs:element name="Szul_hely" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="BAzon" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Kifogott_Halak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kifogott_hal" minOccurs="1" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="THal" type="xs:string"/>
+                                        <xs:element name="Kg" type="xs:string"/>
+                                        <xs:element name="ido" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Hazon" type="xs:string"/>
+                                    <xs:attribute name="Halindex" type="xs:string"/>
+                                    <xs:attribute name="VerAzon" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Ellenorzesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Ellenorzes" minOccurs="1" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Mikor" type="idoType"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="VersenyzoId" type="xs:string"/>
+                                    <xs:attribute name="VBiroId" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Dijak">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Dij" minOccurs="1" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DNev" type="xs:string"/>
+                                        <xs:element name="Erteke" type="xs:string"/>
+                                        <xs:element name="At_adasi_idopont" type="idoType"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Dazon" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Helyszinek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Helyszin" minOccurs="1" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Helyszin_tipusa" type="xs:string"/>
+                                        <xs:element name="Meret" type="xs:positiveInteger"/>
+                                        <xs:element name="Szektor" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="SzektorAzon" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Hal_Tipusok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Hal_Tipus" minOccurs="1" maxOccurs="1000">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Ragadozo" type="xs:string"/>
+                                        <xs:element name="Tipusa" type="xs:string"/>
+                                        <xs:element name="Oshonos" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="index" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="dij_Key">
+            <xs:selector xpath="Dij"/>
+            <xs:field xpath="@Dazon"/>
+        </xs:key>
+        <xs:key name="Versenyzo_Key">
+            <xs:selector xpath="Versenyzo"/>
+            <xs:field xpath="@VAzon"/>
+        </xs:key>
+        <xs:key name="kifogottHal_Key">
+            <xs:selector xpath="Kifogott_hal"/>
+            <xs:field xpath="@Hazon"/>
+        </xs:key>
+        <xs:key name="VersenyBir_Key">
+            <xs:selector xpath="Verseny_Biro"/>
+            <xs:field xpath="@Bazon"/>
+        </xs:key>
+        <xs:key name="Hal_Tipus_key">
+            <xs:selector xpath="Hal_Tipus"/>
+            <xs:field xpath="@index"/>
+        </xs:key>
+        <xs:key name="helyszin_key">
+            <xs:selector xpath="Helyszin"/>
+            <xs:field xpath="@SzektorAzon"/>
+        </xs:key>
+        <xs:keyref name="Fkey_dij_Versenyzo" refer="dij_Key">
+            <xs:selector xpath="Versenyzo"/>
+            <xs:field xpath="@Dazon"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_H-V_VersenyBiro" refer="VersenyBir_Key">
+            <xs:selector xpath="Ellenorzes"/>
+            <xs:field xpath="@VBiroId"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_H-V_Versenyzo" refer="Versenyzo_Key">
+            <xs:selector xpath="Ellenorzes"/>
+            <xs:field xpath="@VersenyzoId"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Hal_Tipus_Kifogott_hal" refer="Hal_Tipus_key">
+            <xs:selector xpath="Kifogott_hal"/>
+            <xs:field xpath="@Halindex"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Kifogott_hal_Versenyzo" refer="Versenyzo_Key">
+            <xs:selector xpath="Kifogott_hal"/>
+            <xs:field xpath="@VerAzon"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Helyszin_Versenyzo" refer="helyszin_key">
+            <xs:selector xpath="Versenyzo"/>
+            <xs:field xpath="@Szektorazon"/>
+        </xs:keyref>
+        <xs:keyref name="Fkey_Doksi_Versenyzo" refer="Versenyzo_Key">
+            <xs:selector xpath="Doksi"/>
+            <xs:field xpath="@Vazon"/>
+        </xs:keyref>
+    </xs:element>
+    <xs:simpleType name="idoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1}[0-9]{1}:[0-9]{1}[0-9]{1}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="szulido">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}[.]\d{2}[.]\d{2}" />
+            <xs:length value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
