@@ -11,7 +11,7 @@ import java.io.File;
 
 public class DOMWriteLWUIJ2 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -61,6 +61,8 @@ public class DOMWriteLWUIJ2 {
             StreamResult streamResult = new StreamResult(new File("XMLLWUIJ2out.xml"));
             transformer.transform(domSource, streamResult);
             System.out.println("Az XML fájl sikeresen létrehozva!");
+
+            printDocumentToConsole(document);
 
         } catch (ParserConfigurationException | TransformerException e) {
             e.printStackTrace();
@@ -270,5 +272,13 @@ public class DOMWriteLWUIJ2 {
             oshonos.appendChild(document.createTextNode(adat[3]));
             halTipus.appendChild(oshonos);
         }
+    }
+    private static void printDocumentToConsole(Document document) throws Exception {
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        DOMSource source = new DOMSource(document);
+        StreamResult consoleResult = new StreamResult(System.out);
+        transformer.transform(source, consoleResult);
     }
 }
